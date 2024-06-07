@@ -1,0 +1,19 @@
+<div>
+    <h1>Save Vendor</h1>
+    <form (ngSubmit)="saveVendor()" #vendorsForm="ngForm">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="vendors.name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="vendors.email" required>
+      </div>
+      <div>
+        <label for="upi">UPI:</label>
+        <input type="text" id="upi" name="upi" [(ngModel)]="vendors.upi" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  

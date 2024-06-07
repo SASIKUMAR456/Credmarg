@@ -1,0 +1,21 @@
+<form (ngSubmit)="submitEmployee()" #employeeForm="ngForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="employee.name" required>
+    </div>
+    <div>
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation" name="designation" [(ngModel)]="employee.designation" required>
+    </div>
+    <div>
+      <label for="ctc">CTC:</label>
+      <input type="number" id="ctc" name="ctc" [(ngModel)]="employee.ctc" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="employee.email" required>
+    </div>
+    
+    <button type="submit" [disabled]="employeeForm.invalid">Submit</button>
+  </form>
+  

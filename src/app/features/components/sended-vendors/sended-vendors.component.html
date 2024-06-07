@@ -1,0 +1,20 @@
+<div>
+    <h1>Email Sended Vendors</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Upi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ven of sendedVendorsEmails">
+          <td>{{ ven.name }}</td>
+          <td>{{ ven.email }}</td>
+          <td>{{ ven.upi }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
